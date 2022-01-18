@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-image: url(./images/bg-desktop.svg);
+  display: grid;
+  place-items: center;
+  background-color: blueviolet;
+}
+.container {
+  max-width: 110rem;
+}
+.main {
+  display: flex;
+}
+
+.content {
+  padding: 4.5rem 0 0 2rem;
+}
+.heading {
+  font-size: 3.8rem;
+  color: white;
+  font-weight: 550;
+  margin-bottom: 1.5rem;
+}
+.para {
+  font-size: 1.3rem;
+  color: white;
+  letter-spacing: 1.6;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 1rem 4rem;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.623);
+}
+.btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+  color: white;
+}
+.mob-desk-pic {
+  width: 60%;
+}
+.logo {
+  width: 20px;
+  height: 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px;
+  margin-left: 1rem;
+}
+.header {
+  margin-bottom: 4rem;
+}
+.footer {
+  text-align: right;
+}
+@media (max-width: 37.5em) {
+  .container {
+    margin: 1rem;
+    max-width: 35rem;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .mob-desk-pic {
+    width: 100%;
+  }
+  .heading,
+  .para {
+    text-align: center;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .para {
+    font-size: 1.6rem;
+  }
+  .btn {
+    border: none;
+    margin: 0 auto;
+    display: block;
+    padding: 1.5rem 9rem;
+    border-radius: 30px;
+  }
+  .footer {
+    text-align: center;
+  }
+}
